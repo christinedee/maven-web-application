@@ -17,7 +17,7 @@ steps{
     sh "echo 'testing must be passed to create artifacts' "
     sh "mvn clean package"
 }
-/*
+
 }
 stage('3Codequality'){
  steps{
@@ -57,5 +57,5 @@ stage('6deploy2prod'){
             emailext body: 'build failed, check pipeline script', recipientProviders: [buildUser(), contributor(), developers(), previous(), upstreamDevelopers()], subject: 'success', to: 'nayalea353@gmail.com'
         }
     }
-    */
+    
 }
